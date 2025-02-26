@@ -9,7 +9,7 @@ This report analyzes the successful fine-tuning of a smaller language model (Lla
 ### Data Generation
 - **Source Model**: DeepSeek-r1-32B
 - **Target Model**: Llama-3.2-3B
-- **Dataset Characteristics**: Synthetic forest fire risk data with 3 classes (Low Risk, Moderate Risk, High Risk). Please check dataset_stats folder for the dataset statistics
+- **Dataset Characteristics**: Synthetic forest fire risk data with 3 classes (Low Risk, Moderate Risk, High Risk). Please check the [dataset_stats](./dataset_stats/) folder for the dataset statistics and visualizations.
 - **Class Distribution**: Purposefully imbalanced (Low Risk: 28%, Moderate Risk: 25%, High Risk: 47%)
 
 ### Training Approach
@@ -46,14 +46,14 @@ Performance metrics tracked across training epochs:
 
 ### Per-Class F1 Score Comparison
 ![Per-Class F1 Comparison](./outputs-forestfire/visualizations/per_class_f1_comparison.png)
-*Figure 3: Comparison of F1 scores by risk level for each model*
+*Figure 2: Comparison of F1 scores by risk level for each model*
 
 ### Confusion Matrices
 ![Base Model Confusion Matrix](./outputs-forestfire/visualizations/confusion_matrix_base_model.png)
-*Figure 5: Confusion matrix for the base model*
+*Figure 3: Confusion matrix for the base model*
 
 ![Epoch 5 Confusion Matrix](./outputs-forestfire/visualizations/confusion_matrix_epoch_1.png)
-*Figure 6: Confusion matrix after 1 epoch of training*
+*Figure 4: Confusion matrix after 1 epoch of training*
 
 ## Analysis of Results
 
